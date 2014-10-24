@@ -1,8 +1,8 @@
 FROM registry:0.8.1
 MAINTAINER linux_china linux_china@hotmail.com
 
-RUN apt-get -y install libmysqlclient-dev
-RUN pip install mysql-python
+#RUN apt-get -y install libmysqlclient-dev
+#RUN pip install mysql-python
 
 ADD ./config_sample.yml /dockerregistry/config/config_sample.yml
 
