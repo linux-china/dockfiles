@@ -1,10 +1,10 @@
-FROM registry:0.8.1
+FROM registry:0.9.1
 MAINTAINER linux_china linux_china@hotmail.com
 
 #RUN apt-get -y install libmysqlclient-dev
 #RUN pip install mysql-python
 
-ADD ./config_sample.yml /dockerregistry/config/config_sample.yml
+ADD ./config_sample.yml /docker-registry/config/config_sample.yml
 
 ENV SEARCH_BACKEND sqlalchemy
 #ENV SQLALCHEMY_INDEX_DATABASE mysql://root:mysecretpassword@192.168.1.22:3306/docker_registry
