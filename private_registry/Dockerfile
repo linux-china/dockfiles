@@ -14,4 +14,4 @@ ENV STORAGE_PATH /opt/registry
 ENV MIRROR_SOURCE https://registry-1.docker.io
 ENV MIRROR_SOURCE_INDEX https://index.docker.io
 
-CMD exec docker-registry
+CMD ["docker-registry"]
